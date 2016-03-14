@@ -1,11 +1,11 @@
 Your task will be, if you shall accept it, to scrape public data from a website and to store it as JSON file
 
-*Tech requirement*
+#### Tech requirement
 - JavaScript/ NodeJS
 - one file
 - magic words are configurable on top of file
 
-*Website*
+#### Website
 http://www.waldorfkindergarten.de/kindergarten/suche/national.html
 
 The search is geospatial - to display all possible result, you have to search accross the whole of germany, e.g. "Kassel"
@@ -22,7 +22,7 @@ Web: www.waldorfschule-kassel.de
 
 Convert all entries into JSON objects
 
-*Output*
+#### Output
 JSON file with an array of objects
 
     [
@@ -36,16 +36,18 @@ JSON file with an array of objects
       }
     ]
     
-*Hints*
-- Use request to fetch the data, use cheerio to scrape the html content
-- Watch out for dublicate entries. The name combined with the city shall be unique
+#### Hints
+- Multiple queries will be required to fetch all possible records
+- You can use request to fetch the data, use cheerio to scrape the html content
+- Watch out for dublicate records. The name combined with the city shall be unique
+- Expect around 555 records to be created in total
 
-*Usage*
+#### Usage
 Start the scraping by running  
 
     node index.js
 
 which creates or overwrittes a file: kindergarten-yyyy-mm-dd.json
 
-*Super awesome bonus feature+
+#### Super awesome bonus feature
 - Geocode all addresses adding coordinates (lat & lng) to each entry
