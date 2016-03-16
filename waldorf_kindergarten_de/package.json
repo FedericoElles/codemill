@@ -1,7 +1,7 @@
 {
   "name": "waldorf_kindergarten_de",
   "version": "1.0.0",
-  "description": "Your task will be, if you shall accept it, to scrape public data from a website and to store it as JSON file",
+  "description": "Your task will be, if you shall accept it, to scrape public data from a website and to store it as JSON file.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
